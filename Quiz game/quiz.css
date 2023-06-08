@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+h1, p{
+  text-align: center;
+  line-height: 3rem;
+  font-size: xx-large;
+  color: white;
+}
+
+.answers{
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+}
+#startquiz:hover, span{
+  transform: scale(0.9);
+  background-color: hotpink;
+}
+
+h2{
+  color: aquamarine;
+  text-align: center;
+}
+
+.button{
+  margin: 0 auto;
+  background-color: hotpink;
+  border-radius: 12px;
+  width: 20rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+}
+
+button:hover, span:hover{
+  background-color: grey;
+  color: antiquewhite;
+  cursor: pointer;
+  transition: 500ms ease-in-out all;
+}
+button:active{
+  transform: scale(0.5);
+  background-color: aqua;
+}
+
+.next, .next1, #submit{
+  padding: 10px 30px;
+  background-color: aqua;
+  margin-top: 2rem;
+  float: right;
+  position: inherit;
+}
+.next1{
+  float: left;
+}
+
+#next:hover{
+  background-color: black;
+  color: antiquewhite;
+}
+#score{
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+.question{
+  width: 50%;
+}
+@keyframes modalKeyFrame {
+  from {
+      transform: rotate(0);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width:490px) {
+  .question{
+    width: 20rem;
+    max-width: fit-content;
+    min-width: auto;
+  }
+}
